@@ -24,9 +24,9 @@ class LandingPage extends Component {
           <div className="headerWrapper">
             <div className="headerDescription">
               {isAuthenticated() && (
-                <Link to="/home">Realtime React App</Link>
+                <Link to="/home">Realtime React Todo App Demo</Link>
               )}
-              {!isAuthenticated() && <span>Realtime React App</span>}
+              {!isAuthenticated() && <span>Realtime React Todo App Demo</span>}
             </div>
             <div className="loginBtn">
               {!isAuthenticated() && (
@@ -51,7 +51,7 @@ class LandingPage extends Component {
               )}
             </div>
           </div>
-          {/* <div className="mainWrapper">
+          <div className="mainWrapper">
             <div className="col-md-5 col-sm-6 col-xs-12 noPadd">
               <div className="appstackWrapper">
                 <div className="appStack">
@@ -149,13 +149,25 @@ class LandingPage extends Component {
                   </div>
                 </div>
               </div>
-              {}
+              {/*
+              <div className="footer">
+                Built with
+                <i className="fas fa-heart" />
+                by{" "}
+                <a
+                  href="https://hasura.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hasura
+                </a>
+              </div>
+              */}
             </div>
             <div className="tutorialImg col-md-6 col-sm-6 col-xs-12 hidden-xs noPadd">
               <img className="img-responsive" src={rightImg} alt="View" />
             </div>
           </div>
-        */}
         </div>
       </div>
     );
